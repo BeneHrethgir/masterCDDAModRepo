@@ -1,0 +1,13 @@
+[
+  {
+    "id": "sloc_escape_pod",
+    "type": "start_location",
+    "name": "Crashed escape pod",
+    "terrain": [ "afs_crashed_escape_pod" ]
+  },
+  {
+    "id": "ravine_edge",
+    "type": "overmap_location",
+    "terrains": [ "ravine_edge" ]
+  }
+]
