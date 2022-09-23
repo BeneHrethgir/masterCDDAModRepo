@@ -1,0 +1,304 @@
+[
+  {
+    "type":"GENERIC",
+    "id" : "xl_nanite_cluster",
+    "name" : "xl nanite cluster",
+    "description" : "A curious perfect cube of metal that seems pliable, yet returns to its original shape when let go. Warm to the touch.",
+    "weight" : 240,
+    "to_hit" : -2,
+    "color" : "light_cyan",
+    "symbol" : ":",
+    "material": "nanite",
+    "volume" : 8,
+    "bashing" : 1,
+    "cutting" : 0,
+    "category" : "veh_parts",
+    "price" : 600000
+  },{
+    "type":"GENERIC",
+    "id" : "xl_nanite_ai",
+    "name" : "xl nanite cluster(ai)",
+    "description" : "A curious perfect cube of metal that seems pliable, yet returns to its original shape when let go. Warm to the touch.",
+    "weight" : 240,
+    "to_hit" : -2,
+    "color" : "light_cyan",
+    "symbol" : ":",
+    "material": "nanite",
+    "volume" : 8,
+    "bashing" : 1,
+    "cutting" : 0,
+    "category" : "veh_parts",
+    "price" : 600000
+  },{
+    "type" : "vehicle_part",
+    "id" : "nt_solar_1",
+    "name" : "nanotech solar panel",
+    "symbol" : "#",
+    "color" : "yellow",
+    "broken_symbol" : "x",
+    "broken_color" : "light_gray",
+    "damage_modifier" : 10,
+    "durability" : 2000,
+    "epower" : 1000,
+    "item" : "xl_nanite_cluster",
+    "difficulty" : 0,
+    "location" : "on_roof",
+    "folded_volume": 25,
+    "flags" : ["SOLAR_PANEL", "REVERSIBLE", "TOOL_NONE", "FOLDABLE"],
+    "breaks_into" : [
+      {"item": "xl_nanite_cluster", "min": 1, "max": 1}
+    ]
+  },{
+    "type" : "vehicle_part",
+    "id" : "nt_armor_1",
+    "name" : "nanotech passive plating",
+    "symbol" : ")",
+    "color" : "green",
+    "broken_symbol" : ")",
+    "broken_color" : "green",
+    "durability" : 15000,
+    "damage_modifier" : 50,
+    "item" : "xl_nanite_cluster",
+    "difficulty" : 0,
+    "location" : "armor",
+    "folded_volume": 25,
+    "flags" : ["ARMOR", "REVERSIBLE", "TOOL_NONE", "FOLDABLE"],
+    "breaks_into" : [
+        {"item": "xl_nanite_cluster", "min": 1, "max": 1}
+    ],
+    "damage_reduction" : {
+      "all" : 15
+    }
+  },{
+    "type" : "vehicle_part",
+    "id" : "nt_armor_2",
+    "name" : "nanotech active plating",
+    "symbol" : ")",
+    "color" : "green",
+    "broken_symbol" : ")",
+    "broken_color" : "green",
+    "durability" : 10000,
+    "damage_modifier" : 500,
+    "item" : "xl_nanite_ai",
+    "difficulty" : 0,
+    "location" : "armor",
+    "folded_volume": 25,
+    "flags" : ["ARMOR", "REVERSIBLE", "TOOL_NONE", "FOLDABLE"],
+    "breaks_into" : [
+        {"item": "xl_nanite_ai", "min": 1, "max": 1}
+    ],
+    "damage_reduction" : {
+      "all" : 5
+    }
+  },{
+    "type" : "vehicle_part",
+    "id" : "nt_fluid_tank_1",
+    "name" : "nanotech compression tank (2500L)",
+    "symbol" : "O",
+    "color" : "light_blue",
+    "broken_symbol" : "#",
+    "broken_color" : "red",
+    "damage_modifier" : 80,
+    "durability" : 1500,
+    "size" : 2500000,
+    "item" : "xl_nanite_cluster",
+    "difficulty" : 0,
+    "location" : "fuel_source",
+    "folded_volume": 25,
+    "flags" : ["FUEL_TANK", "REVERSIBLE", "TOOL_NONE", "FOLDABLE"],
+    "breaks_into" : [
+        {"item": "xl_nanite_cluster", "min": 1, "max": 1}
+    ]
+},{
+    "type" : "vehicle_part",
+    "id" : "nt_storage",
+    "name" : "nanotech 'shoggoth' storage node",
+    "symbol" : "=",
+    "color" : "light_gray",
+    "broken_symbol" : "#",
+    "broken_color" : "dark_gray",
+    "durability" : 150,
+    "size" : 5000,
+    "item" : "xl_nanite_ai",
+    "difficulty" : 0,
+    "location" : "center",
+    "folded_volume": 25,
+    "flags" : ["BOARDABLE", "CARGO", "REVERSIBLE", "TOOL_NONE", "FOLDABLE"],
+    "breaks_into" : [
+        {"item": "xl_nanite_ai", "count": [1, 1]}
+    ]
+  },{
+    "type" : "vehicle_part",
+    "id" : "nanofactory_vehicle_1",
+    "name" : "installed nanofactory v1",
+    "symbol" : "#",
+    "color" : "light_green",
+    "broken_symbol" : "0",
+    "broken_color" : "blue",
+    "damage_modifier" : 10,
+    "durability" : 2000,
+    "epower" : -1,
+    "bonus" : 600,
+    "item" : "nanofactory_1",
+    "difficulty" : 0,
+    "location" : "center",
+    "flags" : ["RECHARGE", "FORGE", "CHEMLAB", "CRAFTRIG", "WELDRIG", "KITCHEN", "ENABLED_DRAINS_EPOWER", "REVERSIBLE", "WATER_PURIFIER", "FAUCET", "TOOL_NONE"],
+    "tools": [
+      "anvil",
+      "can_sealer",
+      "crucible",
+      "mold_plastic",
+      "pastaextruder",
+      "polisher",
+      "press",
+      "puller",
+      "swage",
+      "tongs",
+      "hotplate",
+      "pot",
+      "welder",
+      "soldering_iron",
+      "vac_sealer",
+      "dehydrator",
+      "press",
+      "chemistry_set",
+      "forge",
+      "nanofactory_1"
+    ],
+    "breaks_into" : [
+      {"item": "nanofactory_1", "min": 1, "max": 1}
+    ]
+  },{
+    "type" : "vehicle_part",
+    "id" : "nanofactory_vehicle_2",
+    "name" : "installed nanofactory v2",
+    "symbol" : "#",
+    "color" : "light_green",
+    "broken_symbol" : "0",
+    "broken_color" : "blue",
+    "damage_modifier" : 10,
+    "durability" : 2000,
+    "epower" : -1,
+    "bonus" : 600,
+    "item" : "nanofactory_2",
+    "difficulty" : 0,
+    "location" : "center",
+    "flags" : ["RECHARGE", "FORGE", "CHEMLAB", "CRAFTRIG", "WELDRIG", "KITCHEN", "ENABLED_DRAINS_EPOWER", "REVERSIBLE", "WATER_PURIFIER", "FAUCET", "TOOL_NONE"],
+    "tools": [
+      "anvil",
+      "can_sealer",
+      "crucible",
+      "mold_plastic",
+      "pastaextruder",
+      "polisher",
+      "press",
+      "puller",
+      "swage",
+      "tongs",
+      "hotplate",
+      "pot",
+      "welder",
+      "soldering_iron",
+      "vac_sealer",
+      "dehydrator",
+      "press",
+      "chemistry_set",
+      "forge",
+      "nanofactory_2"
+    ],
+    "breaks_into" : [
+      {"item": "nanofactory_2", "min": 1, "max": 1}
+    ]
+  },{
+    "id": "nanotech_battery",
+    "type": "MAGAZINE",
+    "category": "veh_parts",
+    "name": "nanotech power array",
+    "name_plural": "nanotech power arrays",
+    "description": "A mass of nanites programmed to generate and store power.",
+    "weight": 10000,
+    "volume": 40,
+    "price": 2000000,
+    "price_postapoc": 240000,
+    "to_hit": -4,
+    "bashing": 60,
+    "material": [ "nanite" ],
+    "symbol": ":",
+    "color": "light_cyan",
+    "ammo_type": "battery",
+    "capacity": 10000000,
+    "flags": [ "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD" ]
+  },{
+    "id": "nanotech_battery",
+    "type": "vehicle_part",
+    "name": "nanotech power array",
+    "item": "nanotech_battery",
+    "location" : "fuel_source",
+    "fuel_type": "battery",
+    "symbol": "O",
+    "color": "yellow",
+    "broken_color": "red",
+    "epower": 5000,
+    "difficulty": 0,
+    "durability": 1200,
+    "damage_modifier": 50,
+    "folded_volume": 25,
+    "flags" : ["SOLAR_PANEL", "REVERSIBLE", "TOOL_NONE", "FOLDABLE"],
+    "breaks_into": [
+      { "item": "nanotech_battery", "count": [ 1, 1 ] }
+    ]
+  },{
+    "id": "nano_crawler",
+    "type": "WHEEL",
+    "category": "veh_parts",
+    "name": "nanotech crawler",
+    "description": "A mass of nanites optimized for travel across any land-based surface while lifting a larger object.",
+    "weight": 10000,
+    "volume": 25,
+    "price": 75500,
+    "to_hit": -3,
+    "bashing": 30,
+    "material": [ "nanite" ],
+    "symbol": "]",
+    "color": "white",
+    "diameter": 60,
+    "width": 30
+  },{
+    "id": "nanotech_anima",
+    "copy-from": "engine_motor",
+    "type": "vehicle_part",
+    "name": "nanotech anima",
+    "item": "xl_nanite_ai",
+    "difficulty": 0,
+    "durability": 5000,
+    "power": 1000,
+    "epower": -2500,
+    "damage_modifier": 80,
+    "folded_volume": 25,
+    "flags" : ["REVERSIBLE", "TOOL_NONE", "FOLDABLE", "ENGINE"],
+    "breaks_into": [
+      { "item": "xl_nanite_ai", "count": [ 1, 1 ] }
+    ]
+  },{
+    "id": "nanotech_crawler",
+    "type": "vehicle_part",
+    "name": "nanotech crawler",
+    "item": "nano_crawler",
+    "location": "under",
+    "symbol": "|",
+    "broken_symbol": "x",
+    "color": "dark_gray",
+    "broken_color": "light_gray",
+    "difficulty": 0,
+    "durability": 15000,
+    "damage_modifier": 120,
+    "folded_volume": 25,
+    "breaks_into": [
+      { "item": "nano_crawler", "count": [ 1, 1 ] }
+    ],
+    "flags": [ "WHEEL", "MULTISQUARE", "TRACKED", "NO_JACK", "REVERSIBLE", "TOOL_NONE", "VARIABLE_SIZE", "FOLDABLE", "STABLE" ],
+    "damage_reduction" : {
+      "all" : 10
+    }
+  }
+]

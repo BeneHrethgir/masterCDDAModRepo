@@ -1,0 +1,54 @@
+[
+  {
+  "type" : "recipe",
+  "result": "nanite_multitool_small",
+  "category": "CC_NANO",
+  "subcategory": "CSC_NANO_TOOLS",
+  "skill_used": "fabrication",
+  "difficulty": 0,
+  "time": 10000,
+  "reversible": false,
+    "book_learn": [
+      [ "nanite_core_2", 0 ],
+      [ "nanite_core_3", 0 ],
+      [ "nanite_core_4", 0 ]
+    ],
+  "flags": [ "BLIND_EASY" ],
+  "qualities": [
+    {"id":"NANO_PRO","level":1,"amount":1},
+    {"id":"NANOTECH","level":2,"amount":1}
+  ],
+  "components": [
+    [
+      [ "nanite_cluster", 200]
+    ]
+  ]
+},{
+  "type" : "recipe",
+  "result": "nanite_cluster",
+  "byproducts": [ [ "nanite_cluster", 1] ],
+  "category": "CC_NANO",
+  "subcategory": "CSC_NANO_NANITES",
+  "skill_used": "fabrication",
+  "difficulty": 0,
+  "time": 500,
+  "reversible": false,
+    "book_learn": [
+      [ "nanite_core_1", 0 ],
+      [ "nanite_core_2", 0 ],
+      [ "nanite_core_3", 0 ],
+      [ "nanite_core_4", 0 ]
+    ],
+  "flags": [ "BLIND_EASY" ],
+  "qualities": [
+    {"id":"NANO_PRO","level":1,"amount":1}
+  ],
+  "components": [
+    [
+      [ "nanite_multitool_small", 1],
+      [ "nanite_multitool_large", 1],
+      [ "nanite_multitool_weld", 1]
+    ]
+  ]
+}
+]

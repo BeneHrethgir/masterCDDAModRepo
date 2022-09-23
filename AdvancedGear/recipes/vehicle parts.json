@@ -1,0 +1,98 @@
+[
+	{
+    "type" : "recipe",
+    "result": "xl_nanite_cluster",
+    "category": "CC_NANO",
+    "subcategory": "CSC_NANO_VEHICLE",
+    "difficulty": 0,
+    "time": 1000,
+    "reversible": true,
+    "book_learn": [
+      [ "nanite_core_2", 0 ],
+      [ "nanite_core_3", 0 ],
+      [ "nanite_core_4", 0 ]
+    ],
+    "flags": [ "BLIND_EASY" ],
+    "qualities": [
+      {"id":"NANO_PRO","level":2,"amount":1},
+      {"id":"NANOTECH","level":2,"amount":1}
+    ],
+    "components": [
+      [
+        [ "nanite_cluster", 1200]
+      ]
+    ]
+  },{
+    "type" : "recipe",
+    "result": "nano_crawler",
+    "category": "CC_NANO",
+    "subcategory": "CSC_NANO_VEHICLE",
+    "difficulty": 0,
+    "time": 1000,
+    "reversible": true,
+    "book_learn": [
+      [ "nanite_core_2", 0 ],
+      [ "nanite_core_3", 0 ],
+      [ "nanite_core_4", 0 ]
+    ],
+    "flags": [ "BLIND_EASY" ],
+    "qualities": [
+      {"id":"NANO_PRO","level":2,"amount":1},
+      {"id":"NANOTECH","level":2,"amount":1}
+    ],
+    "components": [
+      [
+        [ "xl_nanite_ai", 1]
+      ]
+    ]
+  },{
+    "type" : "recipe",
+    "result": "xl_nanite_ai",
+    "category": "CC_NANO",
+    "subcategory": "CSC_NANO_VEHICLE",
+    "difficulty": 0,
+    "time": 1000,
+    "reversible": true,
+    "book_learn": [
+      [ "nanite_core_2", 0 ],
+      [ "nanite_core_3", 0 ],
+      [ "nanite_core_4", 0 ]
+    ],
+    "flags": [ "BLIND_EASY" ],
+    "qualities": [
+      {"id":"NANO_PRO","level":2,"amount":1},
+      {"id":"NANOTECH","level":2,"amount":1}
+    ],
+    "components": [
+      [
+        [ "nanite_cluster", 1200]
+      ],
+      [
+        [ "ai_core_blank", 1]
+      ]
+    ]
+  },{
+    "type" : "recipe",
+    "result": "nanotech_battery",
+    "category": "CC_NANO",
+    "subcategory": "CSC_NANO_VEHICLE",
+    "difficulty": 0,
+    "time": 1000,
+    "reversible": true,
+    "book_learn": [
+      [ "nanite_core_2", 0 ],
+      [ "nanite_core_3", 0 ],
+      [ "nanite_core_4", 0 ]
+    ],
+    "flags": [ "BLIND_EASY" ],
+    "qualities": [
+      {"id":"NANO_PRO","level":2,"amount":1},
+      {"id":"NANOTECH","level":2,"amount":1}
+    ],
+    "components": [
+      [
+        [ "nanite_cluster", 1200]
+      ]
+    ]
+  }
+]

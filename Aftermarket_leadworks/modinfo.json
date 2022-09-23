@@ -1,0 +1,11 @@
+[
+  {
+    "id": "aftermarket_leadworks",
+    "type": "MOD_INFO",
+    "name": "Aftermarket Leadworks",
+    "authors": [ "Maddremor" ],
+    "description": "Adds the ability of the crafty survivor to modify Leadworks firearms to accept aftermarket modifications.",
+    "category": "items",
+    "dependencies": [ "dda" ]
+  }
+]
