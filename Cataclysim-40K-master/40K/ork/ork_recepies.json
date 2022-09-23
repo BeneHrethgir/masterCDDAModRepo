@@ -1,0 +1,85 @@
+[
+  {
+    "result": "ork_shoota",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "mechanics",
+    "difficulty": 3,
+    "time": 5000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [ [ "ork_book", 1 ] ],
+    "qualities": [
+      { "id": "CUT", "level": 1 },
+      { "id": "HAMMER", "level": 2 }
+    ],
+    "components": [
+      [ [ "adhesive", 2, "LIST" ] ],
+      [ [ "sheet_metal", 2 ] ],
+      [ [ "pipe", 2 ] ],
+      [ [ "hard_liquor", 2, "LIST" ] ]
+    ]
+  },
+  {
+    "result": "ork_dakka",
+    "type": "recipe",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_RIFLE",
+    "skill_used": "fabrication",
+    "time": 700,
+    "batch_time_factors": [ 50, 10 ],
+    "autolearn": true,
+    "book_learn": [ [ "ork_book", 1 ] ],
+    "charges": 1,
+    "qualities": [
+      { "id": "CUT", "level": 1 },
+      { "id": "HAMMER", "level": 1 }
+    ],
+    "components": [
+      [ [ "50_casing", 1 ], [ "shot_hull", 1 ], [ "40mm_casing", 1 ], [ "700nx_casing", 1 ], [ "scrap", 1 ] ],
+      [ [ "lgrifle_primer", 1 ], [ "shotgun_primer", 1 ] ],
+      [ [ "gunpowder", 60 ], [ "chem_black_powder", 60 ] ],
+      [ [ "ammo_bullet", 24, "LIST" ], [ "bearing", 1 ], [ "scrap", 1 ] ]
+    ]
+  },
+  {
+    "result": "ork_mag_dakka_100",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MAGAZINES",
+    "skill_used": "mechanics",
+    "difficulty": 1,
+    "time": 2000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [ [ "ork_book", 1 ] ],
+    "qualities": [
+      { "id": "CUT", "level": 1 },
+      { "id": "HAMMER", "level": 2 }
+    ],
+    "components": [
+      [ [ "bucket", 1 ] ],
+      [ [ "cordage", 1, "LIST" ] ],
+      [ [ "hard_liquor", 1, "LIST" ] ]
+    ]
+  },
+  {
+    "result": "ork_red_tape",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MAGAZINES",
+    "skill_used": "mechanics",
+    "difficulty": 1,
+    "time": 2000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [ [ "ork_book", 1 ] ],
+    "tools": [ [ [ "paint_brush", -1 ] ] ],
+    "components": [
+      [ [ "r_paint", 20 ], [ "blood", 8 ] ],
+      [ [ "duct_tape", 20 ] ],
+      [ [ "hard_liquor", 1, "LIST" ] ]
+    ]
+  }
+]

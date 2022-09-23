@@ -1,0 +1,14 @@
+[
+  {
+    "id": "SRC",
+    "type": "ammunition_type",
+    "name": "M1926 SRC",
+    "default": "SRC26"
+  },
+  {
+    "id": "BRC",
+    "type": "ammunition_type",
+    "name": "M1913 BRC",
+    "default": "BRC_FMJ"
+  }
+]

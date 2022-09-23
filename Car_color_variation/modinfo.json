@@ -1,0 +1,11 @@
+[
+  {
+    "id": "Car_color_variation",
+    "type": "MOD_INFO",
+    "name": "Car color variation",
+    "authors": [ "YasuYasu" ],
+    "description": "Increase the color variation of car parts.",
+    "category": "vehicles",
+    "dependencies": [ "dda" ]
+  }
+]
