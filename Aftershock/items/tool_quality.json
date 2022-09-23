@@ -1,0 +1,17 @@
+[
+  {
+    "id": "DIAMONDPRESS",
+    "type": "tool_quality",
+    "name": "diamond press"
+  },
+  {
+    "id": "BIONIC_ASSEMBLY",
+    "type": "tool_quality",
+    "name": "bionic assembly"
+  },
+  {
+    "id": "NANO_FORGE",
+    "type": "tool_quality",
+    "name": "nano forge assembly"
+  }
+]
