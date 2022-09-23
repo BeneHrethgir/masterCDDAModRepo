@@ -1,0 +1,188 @@
+[
+  {
+    "id": "MISSION_FIND_HERMIT_1",
+    "type": "mission_definition",
+    "name": "Reach Standing Stones",
+    "goal": "MGOAL_GO_TO_TYPE",
+    "difficulty": 2,
+    "value": 20000,
+    "origins": [ "ORIGIN_OPENER_NPC", "ORIGIN_ANY_NPC" ],
+    "followup": "MISSION_FIND_HERMIT_2",
+    "destination": "standing_stones",
+    "start": {
+      "effect": "follow",
+      "assign_mission_target": { "om_terrain": "standing_stones", "om_special": "Standing stones", "reveal_radius": 3, "search_range": 180, "z": 0 }
+    },
+    "dialogue": {
+      "describe": "If you see this, it's a bug!",
+      "offer": "As unreal as things have gotten, I've been trying to find some sort of answer to it all.  Or if not that, at least closure.  Not long before things boiled over, I've been having strange dreams of otherworldly scenery, and now that everything's gone to hell I'm wondering if there's any meaning to it.  I know it sounds crazy, but there might be something in what I recall that we could investigate.",
+      "accepted": "Thank you.  Thing is, some of the scenery from these dreams looked familiar, and after zero day I started poring over some local maps to try and make sense of what little looked real.  One of the places I recall was hidden away in a part of the local woods I used to go camping in.  I doubt we'll find anything, but maybe it'll give me peace of mind knowing these weird dreams don't have anything to do with what happened.",
+      "rejected": "I understand.  We've got more important things to worry about than chasing half-remembered dreams that might not mean anything.  Maybe another time...",
+      "advice": "Never know what we might run into along the way, maybe the journey will be more useful than what we find there.  The dream had a vision of strange stones and dark rituals.  If any of it turns out to be real, it might be good to visit during the daytime to be safe.",
+      "inquire": "Any luck so far?",
+      "success": "I don't believe it.  The stones, that cairn in the center?  It looks just just like how it appeared in the dreams.  Maybe my mind's playing tricks on me, but I could've sworn I never ran into anything like this before.  I don't know what to make of this.  I'll continue to follow you for now, maybe we can look into this further.",
+      "success_lie": "What madness is this?",
+      "failure": "How ...?"
+    }
+  },
+  {
+    "id": "MISSION_FIND_HERMIT_2",
+    "type": "mission_definition",
+    "name": "Reach Ruined Shrine",
+    "goal": "MGOAL_GO_TO_TYPE",
+    "difficulty": 4,
+    "value": 40000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_FIND_HERMIT_3",
+    "destination": "shrine_anomaly",
+    "start": {
+      "assign_mission_target": { "om_terrain": "shrine_anomaly", "om_special": "Ruined Shrine", "reveal_radius": 3, "search_range": 180, "z": 0 }
+    },
+    "dialogue": {
+      "describe": "If you see this, it's a bug!",
+      "offer": "I've tried to think about what I can recall from the dreams.  Seeing that last place with my own eyes brought a bit of clarity to what I remember.  There's another place that stood out, another part of the countryside I've been to with strange features that shouldn't be there.  It might be more useful to investigate than the last place, too.",
+      "accepted": "I've been in that part of the countryside before, and what I saw in the dream definitely wasn't there back then.  Looked a bit more dangerous but there might be something valuable to make up for it.  And if there's nothing there, fine by me.  Would mean those dreams are just that, and nothing meaningful.",
+      "rejected": "Alright.  Talk to me if you change your mind.  Maybe that last place was a fluke, maybe it had been there all this time and I just didn't remember until now.",
+      "advice": "I saw some sort of artificial structure, otherworldly but definitely manmade.  Or made by something, at least.  Expect anomalous monsters, whatever other hazards if any of it's actually real.",
+      "inquire": "Any luck so far?",
+      "success": "This place is giving me the creeps.  It's real alright, too damn real.  We should be careful, clean the place out if you want but might be worth seeing if anything else I can recall stands out.  Whenever you're ready.",
+      "success_lie": "What madness is this?",
+      "failure": "How ...?"
+    }
+  },
+  {
+    "id": "MISSION_FIND_HERMIT_3",
+    "type": "mission_definition",
+    "name": "Reach Odd House",
+    "goal": "MGOAL_GO_TO_TYPE",
+    "difficulty": 3,
+    "value": 30000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "destination": "arcana_hermitage_1",
+    "start": {
+      "effect": { "u_add_effect": "sent_to_hermit", "duration": "PERMANENT" },
+      "assign_mission_target": { "om_terrain": "arcana_hermitage_1", "om_special": "Hermit Cabin", "reveal_radius": 3, "search_range": 180, "z": 0 }
+    },
+    "dialogue": {
+      "describe": "If you see this, it's a bug!",
+      "offer": "I'm convinced there's something to this.  I tried to go over any of what I remember, bring up anything that stood out.  This isn't giving me any answers or even any closure, just more questions.  One thing stood out though.  A house of some sort, and in that dream I didn't just see images of it.  I saw someone traveling there, and a shadow of something otherworldly hanging over the place.  Thinking on what I recalled was calming, for some reason.  Maybe we'll find something?",
+      "accepted": "Alright.  I'll show you what I recall of the area, and maybe we'll find something this time.  Can't be any worse than the last place we visited.",
+      "rejected": "I understand.  But this was the one dream, out of all the weird shit I can remember, that actually felt like more than just a warning, or omen, or whatever the hell the rest have been.",
+      "advice": "It was a rural house of sort sort.  Nothing dangerous or even weird stood out in that dream.  In fact it seemed like the most mundane out of the bunch, but there was this sense of foreboding, and what happened in it was so much more vivid.",
+      "inquire": "Any luck so far?",
+      "success": "Looks like the place.  I can see signs of the house being inhabited.  The place looks so familar even though this is the first time I've ever laid eyes on it in the waking world.  Maybe the dreams were visions of the future, if so I'm guessing that one was about traveling here, not just an omen or whatever.  I'll let you decide what to do if we meet anyone here, I don't know if the other dreams will do us much good.  At least trying to make sense of them, seeing these places in person made me feel, I don't know, better.  Less uneasy.  Thank you.",
+      "success_lie": "What madness is this?",
+      "failure": "How ...?"
+    }
+  },
+  {
+    "id": "MISSION_HERMIT_RETRIEVE_SWORD",
+    "type": "mission_definition",
+    "name": "Retrieve The Cursed Blade",
+    "//": "Mission is supposed to completed via dialogue, not the normal route.",
+    "goal": "MGOAL_NULL",
+    "difficulty": 5,
+    "value": 250000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "impact_site", "om_special": "Floating Temple", "reveal_radius": 3, "search_range": 180, "z": 0 }
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_HERMIT_RESTORE_SWORD",
+    "dialogue": {
+      "describe": "Perhaps we shall at last atone...",
+      "offer": "This is a task not to be taken lightly, and I can understand if you deem yourself unprepared.  We had a temple once, built on flying stone, over ground marked by a fallen star.  There, our last effort to serve Him failed.  There remains a dangerous threat that broke our order, and a fallen relic.  If I could see that relic once again, tainted though it may be, I can rest in peace when my time comes.",
+      "accepted": "Thank you.  My He From Beyond The Veil guide you, or failing that whatever other gods you serve.  I will tell you where to go, but I'm afraid I can't lead you there personally.  I ask that you retrieve the cursed blade and bring it here, and then I will explain further.  Beware the unholy monsters likely to still infest the temple, and ...what remain of the high priest.",
+      "rejected": "I understand.  The threat that defiles the old temple is not to be underestimated.  If I felt I could make the journey, I would attempt it myself, even if I failed I could die knowing I did the right thing.  Seek my guidance if you change your mind.",
+      "advice": "You will likely have to kill the abomination inhabiting the body of the temple's former high priest.  I know not what weapons he may still carry, nor what unholy power the spirit possessing him commands, but be careful and expect anything.  Most likely he will have turned our own symbol of judgement on his congregation, meaning you'll have to expect lightning magic.",
+      "inquire": "Have you completed this task?",
+      "success": "Excellent.  I have no need of this item, in fact you might be better suited to use it, if you are cautious.  Speak with me further and I will tell you whatever you need know, and then I will have a task to offer you.",
+      "success_lie": "What folly is this?",
+      "failure": "As I feared..."
+    }
+  },
+  {
+    "id": "MISSION_HERMIT_RESTORE_SWORD",
+    "type": "mission_definition",
+    "name": "Restore The Ritual Blade",
+    "//": "Mission is supposed to completed via dialogue, not the normal route.",
+    "goal": "MGOAL_NULL",
+    "difficulty": 5,
+    "value": 250000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_HERMIT_AWAKEN_POWER",
+    "dialogue": {
+      "describe": "Perhaps we shall at last atone...",
+      "offer": "I have told you some of what I know.  And that may be of use to you.  The blade may be marred by dark magic, but it can be salvaged.  You have the potential, and it may prove even more useful restored than as a sanguine-corrupted weapon.",
+      "accepted": "Wonderful.  The way forward lies within Oaths to The Chalice.  To undertake this task is to accept the responsibility that comes with it.  I will offer what advice I can, but I can't perform the purification ritual for you.  That shall be your duty.",
+      "rejected": "I understand, though I hope you have not come to favor the relic's current state for its use as a weapon.  Seek me out if you deem yourself ready.",
+      "advice": "You shall need the studies of those who have came before, certain ritual components.  You'll also need to seek out a copy of Sanguine Codex to properly counter the sanguine curse placed on it.",
+      "inquire": "Have you performed the ritual?  Let me see it...",
+      "success": "To see this, after so long... it's hard for me to put words to this.  It'll never be restored to the glory it once held, forged in fires from Beyond as one of the divine gifts, but even this gives me hope.  Come, we have much to discuss, before we can continue.",
+      "success_lie": "What folly is this?",
+      "failure": "As I feared..."
+    }
+  },
+  {
+    "id": "MISSION_HERMIT_AWAKEN_POWER",
+    "type": "mission_definition",
+    "name": "Earn The Favor From Beyond",
+    "//": "Mission is supposed to completed via dialogue, not the normal route.",
+    "goal": "MGOAL_NULL",
+    "difficulty": 5,
+    "value": 250000,
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "new_anomaly_1",
+        "om_terrain_replace": "field",
+        "random": true,
+        "reveal_radius": 3,
+        "search_range": 180,
+        "z": 0
+      }
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_HERMIT_BECOME_PARAGON",
+    "dialogue": {
+      "describe": "Perhaps we shall at last atone...",
+      "offer": "This is a task I will leave for you to pursue on your own initiative, though I will advise you in how to pursue it if needed.  To use the awakened blade requires certain energies to be returned to The Beyond.  The method that best fulfills the relic's purpose requires you to seek out the lingering wounds in The Veil, and my fading senses have revealed one such place that may be useful.  However you choose to serve Him, your actions will serve a greater purpose.  Will you accept my guidance in this envdevour?",
+      "accepted": "May He From Beyond The Veil guide us both.  I will do what I can to direct you towards letting the relic serve its purpose.  Failing that, there are methods to sustain this power, to be found within the pages of Oaths To The Chalice.  Some of what you will see are common, trifling things.  Others are wonders only He can bestow, and they may yet serve you well.  When the time comes and you have seen the fruit of your labor, speak to me again.",
+      "rejected": "Unfortunate.  I am hopeful that you will heed the call on your own, and come to me when you are ready.  In pursuing the path laid before you, your destiny is intertwined with those who seek to ensure this world does not fall into further decay.  One way or another, your path lies before you.",
+      "advice": "Drawing upon a rift will require you to linger beside the portal, until the blade draws upon its power.  You will know in time, when you have received the sign.  If you require what little guidance I can offer, you need only ask.",
+      "inquire": "Show me that spark within your eyes, if you have earned His favor...",
+      "success": "So it has come to pass.  I hope the task was not too troublesome for you, nor did His favor prove too difficult to grasp.  This proves it.  You are suitable to be His Chosen.  Come, there is much to discuss.  And then, I hope, something more to do...",
+      "success_lie": "What folly is this?",
+      "failure": "As I feared..."
+    }
+  },
+  {
+    "id": "MISSION_HERMIT_BECOME_PARAGON",
+    "type": "mission_definition",
+    "name": "Become A Paragon Of The Veil",
+    "//": "Mission is supposed to completed via dialogue, not the normal route.",
+    "goal": "MGOAL_NULL",
+    "difficulty": 5,
+    "value": 250000,
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "new_anomaly_2",
+        "om_terrain_replace": "field",
+        "random": true,
+        "reveal_radius": 3,
+        "search_range": 180,
+        "z": 0
+      }
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "Perhaps we shall at last atone...",
+      "offer": "This is a task that will be a long-term matter, I suspect.  You have demonstrated the potential the He From Beyond The Veil seeks.  I have told you the nature of our mission, our enduring oath.  And you have filled this feeble old heart with renewed hope.  Others may foster the survival of humanity, but what good will it do if the wounds in The Veil continue to bleed, and we are cast into the abyss?  That is our purpose, the one common ground we held with the Cleansing Flame.  But every rift sealed, every intrusion halted, pulls us away from the brink.  I ask you to continue along the path you have chosen.  Continue your work, and use your rewards with care and precision.  Will you accept this request?",
+      "accepted": "Thank you.  There is another such place that may be useful to start with, and I'll show you where it is.  Other than that, your journey may be a long one, hunting for instabilities and presenting these offerings from Beyond.  When you have achieved this, seek to me again if you so desire.  I will offer you what little guidance I can.",
+      "rejected": "I see.  Perhaps you are confident that The Veil will hold, seeing that it hasn't collapsed despite all that has happened.  But you have come so far, and can we be certain when the consequences are so dire?  If you change your mind, I will await you.",
+      "advice": "Be cautious in what methods you use to obtain the offering.  Use summoning rite only when it is a necessary infliction to make on The Veil, and do not let the allure of blood magic cause yourself undue harm.  As for other rifts to seal, remember every place that you have seen touched by the influence of the arcane, and of mundane hazards as well.  I have little experience in the laboratories that inflicted so much destruction, but they may hold remnants that can be mended.",
+      "inquire": "Has He anointed you as his Chosen?",
+      "success": "You have proven yourself, in ways that few have.  For each relic, only one high priest each had been anointed as you have.  I will offer whatever council I can, but I have no tasks left to offer you.  Follow as fate leads.",
+      "success_lie": "What folly is this?",
+      "failure": "As I feared..."
+    }
+  }
+]
