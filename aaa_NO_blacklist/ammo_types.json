@@ -1,0 +1,20 @@
+[
+  {
+    "id": "20x28mm",
+    "type": "ammunition_type",
+    "name": "20x28mm grenade",
+    "default": "20x28mm_he"
+  },
+  {
+    "id": "7.92x33k",
+    "type": "ammunition_type",
+    "name": "7.92x33 kurtz",
+    "default": "7.92x33k_fmj"
+  },
+  {
+    "id": "300blk",
+    "type": "ammunition_type",
+    "name": "300 blackout",
+    "default": "300blk_fmj"
+  }
+]
