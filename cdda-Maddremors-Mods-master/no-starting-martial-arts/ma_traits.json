@@ -1,0 +1,30 @@
+[
+  {
+    "type": "mutation",
+    "id": "MARTIAL_ARTS",
+    "copy-from": "MARTIAL_ARTS",
+    "name": { "str": "Martial Arts Training" },
+    "starting_trait": false
+  },
+  {
+    "type": "mutation",
+    "id": "MARTIAL_ARTS2",
+    "copy-from": "MARTIAL_ARTS2",
+    "name": { "str": "Self-Defense Classes" },
+    "starting_trait": false
+  },
+  {
+    "type": "mutation",
+    "id": "MARTIAL_ARTS3",
+    "copy-from": "MARTIAL_ARTS3",
+    "name": { "str": "Shaolin Adept" },
+    "starting_trait": false
+  },
+  {
+    "type": "mutation",
+    "id": "MARTIAL_ARTS5",
+    "copy-from": "MARTIAL_ARTS5",
+    "name": { "str": "Melee Weapon Training" },
+    "starting_trait": false
+  }
+]
