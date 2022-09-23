@@ -1,0 +1,12 @@
+[
+  {
+    "id": "bimjakker",
+    "type": "MOD_INFO",
+    "name": "Bim Jakker Food Bucket Mod",
+    "authors": [ "WHALEY" ],
+    "maintainers": [ "WHALEY" ],
+    "description": "Adds televangelist food buckets.",
+    "category": "items",
+    "dependencies": [ "dda" ]
+  }
+]

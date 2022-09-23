@@ -1,0 +1,7 @@
+[
+  {
+    "id": "BIOCO_CHEMICAL",
+    "type": "tool_quality",
+    "name": { "str": "BioCo Chemical Making" }
+  }
+]

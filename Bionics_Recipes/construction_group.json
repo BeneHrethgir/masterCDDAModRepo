@@ -1,0 +1,12 @@
+[
+  {
+    "id": "build_autodoc",
+    "type": "construction_group",
+    "name": "Build Autodoc"
+  },
+  {
+    "id": "build_autodoc_couch",
+    "type": "construction_group",
+    "name": "Build Autodoc Couch"
+  }
+]

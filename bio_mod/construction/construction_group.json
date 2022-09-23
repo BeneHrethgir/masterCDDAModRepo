@@ -1,0 +1,22 @@
+[
+  {
+    "id": "build_bioco_assembly_machine",
+    "type": "construction_group",
+    "name": "Build BioCo Assembly Machine"
+  },
+  {
+    "id": "build_bioco_chemical_engine",
+    "type": "construction_group",
+    "name": "Build BioCo Chemical Engine"
+  },
+  {
+    "id": "build_bioco_autodoc",
+    "type": "construction_group",
+    "name": "Build BioCo AutoDoc"
+  },
+  {
+    "id": "build_bioco_autodoc_couch",
+    "type": "construction_group",
+    "name": "Build BioCo AutoDoc Couch"
+  }
+]

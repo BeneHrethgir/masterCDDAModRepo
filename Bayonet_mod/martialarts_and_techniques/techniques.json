@@ -1,0 +1,13 @@
+[
+  {
+    "id": "tec_bayonet_gore",
+    "type": "technique",
+    "name": "Twist",
+    "skill_requirements": [ { "name": "melee", "level": 2 } ],
+    "stun_dur": 2,
+    "melee_allowed": true,
+    "required_buffs_all": [ "bayonet__stab" ],
+    "messages": [ "You twist your bayonet in %s", "<npcname> twist the bayonet in %s" ],
+    "description": "extra damage, 2 turns duration"
+  }
+]
